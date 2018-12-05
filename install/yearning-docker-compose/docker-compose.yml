@@ -7,8 +7,8 @@ services:
       - ./docker/etc/mysql/:/etc/mysql/conf.d/
       - ./db_data/:/var/lib/mysql/
       - ./init-sql/:/docker-entrypoint-initdb.d/
-      - /etc/localtime:/etc/localtime:ro
-      - /etc/timezone:/etc/timezone:ro
+#       - /etc/localtime:/etc/localtime:ro
+#       - /etc/timezone:/etc/timezone:ro
     restart: always
     ports:
       - "3306:3306"
