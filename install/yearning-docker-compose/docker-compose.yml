@@ -13,6 +13,7 @@ services:
     ports:
       - "3306:3306"
     environment:
+      TZ: Asia/Shanghai
       MYSQL_ROOT_PASSWORD: yearning
       MYSQL_DATABASE: Yearning
       MYSQL_USER: yearning
